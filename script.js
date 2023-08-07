@@ -5,8 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const beginButton = document.getElementById("beginButton");
     const modal = document.getElementById("myModal");
     const backgroundMusic = document.getElementById("backgroundMusic");
+    const spinnerInd = document.getElementById("spinner-indicator")
 
     spinnerContainer.style.display = "none"
+    spinnerInd.style.display = "none"
 
     // List of Items
     let itemsList = [
@@ -77,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
   beginButton.addEventListener("click", () => {
     modal.style.display = "none"; // Hide the modal
     spinnerContainer.style.display = "block"
+    spinnerInd.style.display = "block"
     playBackgroundMusic();
   });
 

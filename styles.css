@@ -49,4 +49,13 @@ body {
     color:#ccc;
     
   }
+
+  #spinner-indicator {
+    position: absolute;
+    float:right;
+    width:150px;
+    height:auto;
+    margin-top:390px;
+    margin-left:650px;
+  }
   
