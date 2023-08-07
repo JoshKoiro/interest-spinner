@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rotating Spinner</title>
+  <title>Josh's Spinner of Interests</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1 id="heading">Josh's Spinner of Interests</h1>
+    <div id="cats" class="animated-background"></div>
   <!-- Modal -->
   <div id="myModal" class="modal">
     <div class="modal-content">
@@ -15,13 +17,16 @@
   </div>
 
   <audio id="backgroundMusic" src="./Jaunty_Gumption.mp3" loop></audio>
-
-  <div id="spinner-container">
-    <img id="spinner-img" src="./Interest Spinner.png" alt="Spinner Image">
-    
+  <div class="container">
+    <div id="spinner-container">
+        <img id="spinner-img" src="./Interest Spinner.png" alt="Spinner Image">
+        
+      </div>
+      <img id="spinner-indicator" src="./Indicator.png" alt="Spinner Indicator">
+      <div id="spinner-text"></div>
   </div>
-  <img id="spinner-indicator" src="./Indicator.png" alt="Spinner Indicator">
-  <div id="spinner-text"></div>
+  
+
 
   <script src="./script.js"></script>
 </body>

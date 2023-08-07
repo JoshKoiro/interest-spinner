@@ -1,10 +1,6 @@
 body {
-    background-color:#333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    background-color:rgba(50,50,50,1);
+    overflow: hidden;
   }
   
   .modal {
@@ -25,8 +21,17 @@ body {
     padding: 20px;
     text-align: center;
   }
+
+  .container {
+    display: flex;
+justify-content: center;
+align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
   
   #spinner-container {
+    display: none;
     position: relative;
     width: 600px; /* Adjust the width and height as needed to make the spinner larger */
     height: 600px;
@@ -43,7 +48,7 @@ body {
   #spinner-text {
     position:absolute;
     top:80vh;
-    font-size: 32px;
+    font-size: 60px;
     font-family:"Comic Sans MS";
     font-weight: bold;
     color:#ccc;
@@ -51,6 +56,7 @@ body {
   }
 
   #spinner-indicator {
+    display:none;
     position: absolute;
     float:right;
     width:150px;
@@ -58,4 +64,41 @@ body {
     margin-top:390px;
     margin-left:650px;
   }
+  
+  .animated-background {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3BsNWRxcDNsYjlhNHMza3VtOWh5dmd1ZTYwbGc2djE0MXhqY3FicCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DA8op0omzFuwe14iyj/giphy.gif') repeat;
+    background-size:auto;
+    background-repeat: repeat;
+    opacity: 0.2;
+    /* animation: animateBackground 5s linear infinite; Adjust the animation duration and timing function as needed */
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes animateBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -400px -300px; /* Adjust the values to fit the size of your animated gif */
+    }
+  }
+
+  h1 {
+    display:none;
+    color:white;
+    position: absolute;
+    text-align: center;
+    width:100%;
+    top:8vh;
+    font-family:"Comic Sans MS";
+    font-size:60px;
+    font-weight: bold;
+    opacity: 1;
+    -webkit-text-stroke: 3px black;
+  }
+  
   
